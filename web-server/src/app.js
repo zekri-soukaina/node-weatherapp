@@ -50,7 +50,7 @@ app.get("/about", (req, res) => {
 //json
 app.get("/help", (req, res) => {
   res.render("help", {
-    msg: "we can help you if you send us an email ",
+    msg: "Send us an email for any help . ",
     title: "Help!",
     name: "soukaina zekri",
   });
