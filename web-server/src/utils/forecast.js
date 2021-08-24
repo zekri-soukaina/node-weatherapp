@@ -12,13 +12,17 @@ const forecast = (X, Y, callback) => {
     } else {
       callback(
         undefined,
-        "Today : " +
+        "Today  " +
           body.current.weather_descriptions[0] +
-          ", its currently : " +
+          " And Its currently : " +
           body.current.temperature +
-          " degress out. And it feels like " +
+          " degress out. It feels like " +
           body.current.feelslike +
-          " degress out."
+          " degress out. " +
+          "Humidity " +
+          body.current.humidity +
+          " And the wind speed is " +
+          body.current.wind_speed
       );
     }
   });
